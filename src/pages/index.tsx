@@ -48,12 +48,12 @@ export default function Index() {
         <div className="py-8">
           <p className="text-sm">Sponsored by...</p>
           <div className="flex justify-between">
-            <div className="flex flex-1 justify-center items-center hover:cursor-pointer">
-              {" "}
-              onClick=
-              {() => {
+            <div
+              className="flex flex-1 justify-center items-center hover:cursor-pointer"
+              onClick={() => {
                 window.open("https://frontierclimate.com/", "_blank");
               }}
+            >
               <img
                 src="https://frontierclimate.com/logo-87a5ae1c9c0590dfef9f.svg"
                 alt="Berkeley Logo"
