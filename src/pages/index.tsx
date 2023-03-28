@@ -1,9 +1,9 @@
 /* eslint-disable */
 
-import { AwesomeButton } from 'react-awesome-button';
-import Typewriter from 'typewriter-effect';
+import { AwesomeButton } from "react-awesome-button";
+import Typewriter from "typewriter-effect";
 
-import Page from '../layout/Page';
+import Page from "../layout/Page";
 
 export default function Index() {
   return (
@@ -21,51 +21,55 @@ export default function Index() {
         <Typewriter
           options={{
             strings: [
-              '$500 IN PRIZES',
-              'MEET NEW PEOPLE',
-              'SOLVE HARD PROBLEMS',
-              'SAVE THE WORLD',
+              "$500 IN PRIZES",
+              "MEET NEW PEOPLE",
+              "SOLVE HARD PROBLEMS",
+              "SAVE THE WORLD",
             ],
             autoStart: true,
             loop: true,
             deleteSpeed: 40,
             delay: 40,
-            cursorClassName: 'text-2xl font-bold animate-ping text-gray-900',
+            cursorClassName: "text-2xl font-bold animate-ping text-gray-900",
             wrapperClassName:
-              'text-center text-2xl font-bold text-gray-900 font-title',
+              "text-center text-2xl font-bold text-gray-900 font-title",
           }}
         />
         <p className="text-body py-4 text-gray-900">
           Interested in carbon capture? Come work with experts and learn more
-          about{' '}
+          about{" "}
           <span className="underline">
             <a href="https://frontierclimate.com/writing/cdr-gap-database">
               high impact research topics
             </a>
-          </span>{' '}
+          </span>{" "}
           that one day might save the world.
         </p>
         <div className="py-8">
           <p className="text-sm">Sponsored by...</p>
           <div className="flex justify-between">
             <div className="flex flex-1 justify-center items-center hover:cursor-pointer">
+              {" "}
+              onClick=
+              {() => {
+                window.open("https://frontierclimate.com/", "_blank");
+              }}
               <img
                 src="https://frontierclimate.com/logo-87a5ae1c9c0590dfef9f.svg"
                 alt="Berkeley Logo"
                 className="w-32 h-16"
-                onClick={() => {
-                  window.open('https://frontierclimate.com/', '_blank');
-                }}
               />
             </div>
-            <div className="flex flex-1 justify-center items-center hover:cursor-pointer">
+            <div
+              className="flex flex-1 justify-center items-center hover:cursor-pointer"
+              onClick={() => {
+                window.open("https://www.homeworld.bio/", "_blank");
+              }}
+            >
               <img
                 src="https://images.squarespace-cdn.com/content/v1/62d6bd9f0475d7268cc3b7ab/1bbeea7b-c2b1-4b25-be7c-e1d9fab586d7/color.png?format=500w"
                 alt="Berkeley Logo"
                 className="w-16 h-16"
-                onClick={() => {
-                  window.open('https://www.homeworld.bio/', '_blank');
-                }}
               />
               <p className="pl-2 font-bold font-title">Homeworld COLLECTIVE</p>
             </div>
@@ -75,13 +79,18 @@ export default function Index() {
           <p className="font-title font-bold text-xl py-4 text-gray-900">
             Step 1:
             <span className="ml-2">
-              <AwesomeButton type="github" onPress={() => {
-                // Open in new tab programmatically
-                window.open(
-                  'https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform',
-                  '_blank'
-                );
-              }}>SIGN UP</AwesomeButton>
+              <AwesomeButton
+                type="github"
+                onPress={() => {
+                  // Open in new tab programmatically
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform",
+                    "_blank"
+                  );
+                }}
+              >
+                SIGN UP
+              </AwesomeButton>
             </span>
           </p>
           <p>
@@ -94,10 +103,10 @@ export default function Index() {
             Step 2: Get Inspired
           </p>
           <p>
-            Take a look through{' '}
+            Take a look through{" "}
             <a href="/" className="underline">
               our curated list of topics
-            </a>{' '}
+            </a>{" "}
             and find something that speaks to you.
           </p>
         </div>
