@@ -3,7 +3,6 @@ import { ReactNode } from 'react';
 import Link from 'next/link';
 
 import { FooterCopyright } from './FooterCopyright';
-import { FooterIconList } from './FooterIconList';
 
 type ICenteredFooterProps = {
   logo: ReactNode;
@@ -18,18 +17,19 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
         🌲 CLIMATE INNOVATHON 🌲
       </a>
     </Link>
-
     <nav>
       <ul className="navbar mt-5 flex flex-row justify-center font-medium text-xl text-gray-800">
         {props.children}
       </ul>
     </nav>
 
+    {/*
     <div className=" flex justify-center">
       <FooterIconList>{props.iconList}</FooterIconList>
     </div>
+    */}
 
-    <div className="mt-4 text-sm">
+    <div className="text-sm">
       <FooterCopyright />
     </div>
 

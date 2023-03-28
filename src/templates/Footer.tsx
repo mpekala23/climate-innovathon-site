@@ -4,7 +4,7 @@ import { Logo } from './Logo';
 import { CenteredFooter } from '../footer/CenteredFooter';
 
 const Footer = () => (
-  <div className="z-20 backdrop-blur-sm bg-emerald-900 bg-opacity-90 p-8">
+  <div className="z-2 p-8">
     <CenteredFooter
       logo={<Logo />}
       iconList={

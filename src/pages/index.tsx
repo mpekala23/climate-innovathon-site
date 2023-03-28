@@ -48,18 +48,24 @@ export default function Index() {
         <div className="py-8">
           <p className="text-sm">Sponsored by...</p>
           <div className="flex justify-between">
-            <div className="flex flex-1 justify-center items-center">
+            <div className="flex flex-1 justify-center items-center hover:cursor-pointer">
               <img
                 src="https://frontierclimate.com/logo-87a5ae1c9c0590dfef9f.svg"
                 alt="Berkeley Logo"
                 className="w-32 h-16"
+                onClick={() => {
+                  window.open('https://frontierclimate.com/', '_blank');
+                }}
               />
             </div>
-            <div className="flex flex-1 justify-center items-center">
+            <div className="flex flex-1 justify-center items-center hover:cursor-pointer">
               <img
                 src="https://images.squarespace-cdn.com/content/v1/62d6bd9f0475d7268cc3b7ab/1bbeea7b-c2b1-4b25-be7c-e1d9fab586d7/color.png?format=500w"
                 alt="Berkeley Logo"
                 className="w-16 h-16"
+                onClick={() => {
+                  window.open('https://www.homeworld.bio/', '_blank');
+                }}
               />
               <p className="pl-2 font-bold font-title">Homeworld COLLECTIVE</p>
             </div>
@@ -69,7 +75,13 @@ export default function Index() {
           <p className="font-title font-bold text-xl py-4 text-gray-900">
             Step 1:
             <span className="ml-2">
-              <AwesomeButton type="github">SIGN UP</AwesomeButton>
+              <AwesomeButton type="github" onPress={() => {
+                // Open in new tab programmatically
+                window.open(
+                  'https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform',
+                  '_blank'
+                );
+              }}>SIGN UP</AwesomeButton>
             </span>
           </p>
           <p>
