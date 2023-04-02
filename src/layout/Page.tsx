@@ -1,9 +1,9 @@
-import { AwesomeButton } from 'react-awesome-button';
+import { AwesomeButton } from "react-awesome-button";
 
-import { Meta } from './Meta';
-import { Navbar } from '../navigation/Navbar';
-import { Footer } from '../templates/Footer';
-import { AppConfig } from '../utils/AppConfig';
+import { Meta } from "./Meta";
+import { Navbar } from "../navigation/Navbar";
+import { Footer } from "../templates/Footer";
+import { AppConfig } from "../utils/AppConfig";
 
 interface Props {
   children: React.ReactNode;
@@ -15,14 +15,21 @@ export default function Index({ children }: Props) {
       <div className="overscroll-contain flex flex-1 flex-col">
         <Meta title={AppConfig.title} description={AppConfig.description} />
         <Navbar>
-          <li>
+          <li
+            onClick={() => {
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform",
+                "_blank"
+              );
+            }}
+          >
             <AwesomeButton
               type="github"
               onPress={() => {
                 // Open in new tab programmatically
                 window.open(
-                  'https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform',
-                  '_blank'
+                  "https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform",
+                  "_blank"
                 );
               }}
             >

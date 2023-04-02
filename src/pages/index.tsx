@@ -78,7 +78,15 @@ export default function Index() {
         <div className="py-3">
           <p className="font-title font-bold text-xl py-3 text-gray-900">
             Step 1:
-            <span className="ml-2">
+            <span
+              className="ml-2"
+              onClick={() => {
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform",
+                  "_blank"
+                );
+              }}
+            >
               <AwesomeButton
                 type="github"
                 onPress={() => {
@@ -254,7 +262,15 @@ export default function Index() {
         </div>
         <p className="font-title font-bold text-xl py-3 text-gray-900">
           Sound like fun?
-          <span className="ml-2">
+          <span
+            className="ml-2"
+            onClick={() => {
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScUsqlmSselCVs8iPZNkMnQj9UHJk1hpy8akZjz5teW9YPElA/viewform",
+                "_blank"
+              );
+            }}
+          >
             <AwesomeButton
               type="github"
               onPress={() => {
