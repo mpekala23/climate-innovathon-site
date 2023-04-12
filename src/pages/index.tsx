@@ -15,6 +15,9 @@ export default function Index() {
         </p>
 
         <p className="pt-4 font-title text-white">LEVERETT LIBRARY THEATER</p>
+        <p className="font-title text-white">
+          28 DeWolfe St, Cambridge, MA 02138
+        </p>
         <p className="font-title text-white">APRIL 14th-16th</p>
       </div>
       <div className="z-20 bg-emerald-50 p-8">
